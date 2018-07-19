@@ -28,6 +28,7 @@ public class Main2Activity extends AppCompatActivity {
         title.setText(intent.getStringExtra("title"));
         desc.setText(intent.getStringExtra("desc"));
         Picasso.with(getApplicationContext()).load(intent.getStringExtra("image")).into(imageView);
+
     }
 
     public void buBack(View view) {

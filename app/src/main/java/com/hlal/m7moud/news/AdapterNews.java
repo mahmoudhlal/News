@@ -15,15 +15,16 @@ import com.hlal.m7moud.news.dataproccess.DataEncapsulation;
 import com.squareup.picasso.Picasso;
 
 import java.util.ArrayList;
+import java.util.List;
 
 public class AdapterNews extends RecyclerView.Adapter<AdapterNews.ViewHolder> implements View.OnClickListener {
-    ArrayList<DataEncapsulation> arrayList ;
+    List<DataEncapsulation> arrayList ;
     Context context ;
     DataEncapsulation dataEncap = new DataEncapsulation();
     MainActivity mainActivity ;
 
 
-    public AdapterNews(ArrayList<DataEncapsulation> arrayList, Context context ,MainActivity mainActivity) {
+    public AdapterNews(List<DataEncapsulation> arrayList, Context context , MainActivity mainActivity ) {
         this.arrayList = arrayList;
         this.context = context;
         this.mainActivity = mainActivity ;
